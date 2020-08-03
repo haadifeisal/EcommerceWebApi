@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EcommerceWebApi</name>
+    </assembly>
+    <members>
+        <member name="M:EcommerceWebApi.Controller.AuthController.Login(EcommerceWebApi.DataTransferObject.UserRequestDto)">
+            <summary>
+            User Login
+            </summary>
+            <param name="userRequestDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EcommerceWebApi.Controller.AuthController.RegisterCustomer(EcommerceWebApi.DataTransferObject.CustomerRequestDto)">
+            <summary>
+            Register a customer.
+            </summary>
+            <param name="username"></param>
+            <param name="password"></param>
+            <param name="customerRequestDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EcommerceWebApi.Controller.AuthController.RegisterAdmin(EcommerceWebApi.DataTransferObject.UserRequestDto)">
+            <summary>
+            Register a admin.
+            </summary>
+            <param name="userRequestDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EcommerceWebApi.Controller.CartController.GetProductsInCart">
+            <summary>
+            Get a list of available products in cart.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EcommerceWebApi.Controller.CartController.GetProductsInCartCount">
+            <summary>
+            Get count of how many products there are in the cart.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EcommerceWebApi.Controller.CartController.AddProductToCart(System.Guid)">
+            <summary>
+            Add product to cart.
+            </summary>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EcommerceWebApi.Controller.CartController.RemoveProductFromCart(System.Guid)">
+            <summary>
+            Delete product from cart.
+            </summary>
+            <param name="cartProductId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EcommerceWebApi.Controller.CartController.DecreaseProductQuantityFromCart(System.Guid)">
+            <summary>
+            Decrease product quantity from cart.
+            </summary>
+            <param name="cartProductId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EcommerceWebApi.Controller.CategoryController.GetAllCategories">
+            <summary>
+            Get a list of all categories.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EcommerceWebApi.Controller.CategoryController.GetProductsInCategory(System.Guid)">
+            <summary>
+            Get all products in category.
+            </summary>
+            <param name="categoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EcommerceWebApi.Controller.CategoryController.AddCategory(System.String)">
+            <summary>
+            Create a new category.
+            </summary>
+            <param name="categoryName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EcommerceWebApi.Controller.CustomerController.GetCustomers">
+            <summary>
+            Get a list of all customers
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EcommerceWebApi.Controller.ProductController.GetProduct(System.Guid)">
+            <summary>
+            Get a single product.
+            </summary>
+            <param name="productId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EcommerceWebApi.Controller.ProductController.AddProduct(EcommerceWebApi.DataTransferObject.ProductRequestDto)">
+            <summary>
+            Add a new product.
+            </summary>
+            <param name="productRequestDto"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
