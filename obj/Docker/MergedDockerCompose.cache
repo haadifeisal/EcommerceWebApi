@@ -1,0 +1,11 @@
+services:
+  ecommercewebapi:
+    build:
+      context: C:\Users\heybe\Documents\Github\EcommerceWebApi
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: ecommercewebapi
+    ports:
+    - target: 80
+version: '3.4'

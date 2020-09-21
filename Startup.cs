@@ -1,10 +1,7 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
 using System.Text;
-using System.Threading.Tasks;
 using AutoMapper;
 using EcommerceWebApi.DataTransferObject.Configuration;
 using EcommerceWebApi.Domain.ServiceManager;
@@ -13,14 +10,12 @@ using EcommerceWebApi.Repository.Ecommerce;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.Swagger;
 
 namespace EcommerceWebApi
 {
@@ -36,6 +31,12 @@ namespace EcommerceWebApi
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            /*var server = ".";
+            var port = "1401";
+            var user = "sa";
+            var password = "1Secure*Password1";
+            var database = "Ecommerce";*/
+
             services.AddControllers();
             services.AddOptions();
             services.Configure<AppSettings>(Configuration.GetSection("Settings"));
@@ -53,6 +54,7 @@ namespace EcommerceWebApi
 
             services.AddDbContext<EcommerceContext>(options =>
             {
+                //options.UseSqlServer($"Server={server},{port};Initial Catalog={database};User ID={user};Password={password};")
                 options.UseSqlServer(Configuration.GetConnectionString("EcommerceDBConnection"),
                     sqlServerOptionsAction: sqlOptions =>
                     {
@@ -142,6 +144,8 @@ namespace EcommerceWebApi
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ecommerce - API");
             });
+
+            SeedDB.Populate(app);
 
             app.UseEndpoints(endpoints =>
             {
