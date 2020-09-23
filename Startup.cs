@@ -31,11 +31,11 @@ namespace EcommerceWebApi
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            /*var server = ".";
-            var port = "1401";
-            var user = "sa";
-            var password = "1Secure*Password1";
-            var database = "Ecommerce";*/
+            /*var server = Configuration["ServerName"] ?? "sqlserver";
+            var port = Configuration["Port"] ?? "1401";
+            var user = Configuration["User"] ?? "sa";
+            var password = Configuration["Password"] ?? "1Secure*Password1";
+            var database = Configuration["Database"] ?? "ecommerce";*/
 
             services.AddControllers();
             services.AddOptions();

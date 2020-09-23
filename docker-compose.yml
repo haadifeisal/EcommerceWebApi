@@ -16,8 +16,14 @@ services:
         - common_net
   web-api:
     build: .
+    container_name: webapi
     depends_on:
         - sqlserver
+    environment:
+        ServerName: "sqlserver"
+        User: "sa"
+        Password: "1Secure*Password1"
+        Database: "ecommerce"
     ports:
         - "8080:80"
     networks:
