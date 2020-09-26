@@ -25,6 +25,16 @@ services:
         Password: "1Secure*Password1"
         Database: "ecommerce"
     ports:
-        - "8080:80"
+        - "8081:80"
+    networks:
+        - common_net
+  
+  angular-app:
+    image: haadi94/angularapp
+    container_name: angularapp
+    depends_on:
+        - web-api
+    ports:
+        - "3000:80"
     networks:
         - common_net
