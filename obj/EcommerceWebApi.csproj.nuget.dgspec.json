@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\heybe\\Documents\\Github\\EcommerceWebApi\\EcommerceWebApi.csproj": {}
+    "C:\\Users\\heybe\\Documents\\Github\\EcommerceApp\\EcommerceWebApi\\EcommerceWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\heybe\\Documents\\Github\\EcommerceWebApi\\EcommerceWebApi.csproj": {
+    "C:\\Users\\heybe\\Documents\\Github\\EcommerceApp\\EcommerceWebApi\\EcommerceWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\heybe\\Documents\\Github\\EcommerceWebApi\\EcommerceWebApi.csproj",
+        "projectUniqueName": "C:\\Users\\heybe\\Documents\\Github\\EcommerceApp\\EcommerceWebApi\\EcommerceWebApi.csproj",
         "projectName": "EcommerceWebApi",
-        "projectPath": "C:\\Users\\heybe\\Documents\\Github\\EcommerceWebApi\\EcommerceWebApi.csproj",
+        "projectPath": "C:\\Users\\heybe\\Documents\\Github\\EcommerceApp\\EcommerceWebApi\\EcommerceWebApi.csproj",
         "packagesPath": "C:\\Users\\heybe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\heybe\\Documents\\Github\\EcommerceWebApi\\obj\\",
+        "outputPath": "C:\\Users\\heybe\\Documents\\Github\\EcommerceApp\\EcommerceWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\heybe\\AppData\\Roaming\\NuGet\\NuGet.Config",

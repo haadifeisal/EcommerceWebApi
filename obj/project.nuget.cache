@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VVq1Tmp2tetIeQZOCCcAovkKIYv0ofWBWmePpkr/uiW/Tr+at8rVy6B76eUq1ELyZLw9S1Xci97ebbmFSoSyEA==",
+  "dgSpecHash": "Lsa4OFChWCq2fgJSUKodXsOhKZx1/ELEVdHRGGF6OyyPXNoZHdRiGDNSYbRJv61P5jJdmY9GMFHr0phujAfmLg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\heybe\\Documents\\Github\\EcommerceWebApi\\EcommerceWebApi.csproj",
+  "projectFilePath": "C:\\Users\\heybe\\Documents\\Github\\EcommerceApp\\EcommerceWebApi\\EcommerceWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\heybe\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\heybe\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.0.0\\microsoft.aspnetcore.authentication.abstractions.2.0.0.nupkg.sha512",

@@ -1,4 +1,17 @@
-﻿Scaffold: 
+﻿To run application:
+* Open powershell, locate to project path:  "...\Documents\Github\EcommerceApp\EcommerceWebApi"
+* Type following command to start the docker-compose file:  docker-compose -p ecommerceapp up
+* After the docker-compose file finishes installing all its dependencies, go to the browser to see the angular application running:  localhost:3000
+* Login credentials: username: bond007 password: bond007
+* Register button does not work yet, no supported functionality.
+* There are 2 categories which includes different set of products, to add product to the cart, login with following username and password: username=bond007 password=bond007
+
+
+
+
+
+
+Scaffold: 
 Scaffold-DbContext "Server=(LocalDB)\MSSQLLocalDB;Database=Ecommerce;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Repository\Ecommerce -f
 
 login username: malik-geechi
